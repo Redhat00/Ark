@@ -1,8 +1,8 @@
 'use client';
 
-import { useSearchParams, useRouter } from 'next/navigation';
+import {  useRouter } from 'next/navigation';
 import { useEffect, useState } from 'react';
-import { Suspense } from 'react';
+
 
 const VerifyPage = () => {
   const router = useRouter();
