@@ -2,11 +2,12 @@
 
 import { useSearchParams, useRouter } from 'next/navigation';
 import { useEffect, useState } from 'react';
+import { Suspense } from 'react';
 
 const VerifyPage = () => {
   const router = useRouter();
-  const searchParams = useSearchParams();
-  const email = searchParams.get('email') || '';
+  // const searchParams = useSearchParams();
+  // const email = searchParams.get('email') || '';
 
   const [code, setCode] = useState('');
   const [message, setMessage] = useState('');
@@ -37,7 +38,7 @@ const VerifyPage = () => {
       <div className="w-full max-w-md shadow-md border rounded-lg p-6">
         <h2 className="text-2xl font-bold mb-2">Enter Verification Code</h2>
         <p className="text-sm mb-6 text-gray-600">
-          A code has been sent to <span className="font-medium">{email}</span>
+          A code has been sent to <span className="font-medium">your email</span>
         </p>
         <button
             onClick={() => router.back()}
