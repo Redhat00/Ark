@@ -1,0 +1,11 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom media query to override styles for larger screens */
+@media (min-width: 1024px) {
+    .sidebar-link span {
+        display: inline-block !important; /* Override Tailwind's hidden class */
+        margin-top: 0 !important; /* Reset margin-top */
+    }
+}
