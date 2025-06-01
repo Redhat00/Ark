@@ -5,11 +5,10 @@ import Link from 'next/link'
 import Search from "@/components/Search";
 import { BiUser } from "react-icons/bi";
 import { TiShoppingCart } from "react-icons/ti";
-import { useState } from 'react';
+
 
 const Header =() => {
 
-    const [showSearch, setShowSearch] = useState(false);
 
     return (
         <div className='flex h-10  w-full items-center top-0 justify-between'>
